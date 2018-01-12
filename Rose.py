@@ -23,9 +23,9 @@ else:
 question = input("Would you like to change the color")
 if question == "yes":
     print ("Great")
+    Color = input("What color would you like your roses to be: Lavender, Maroon, Gold, Yellow")
 else:
     print("Nice")
     
-Color = input("What color would you like your roses to be: Lavender, Maroon, Gold, Yellow")
 Box = input("Choose a box color: Black, White, Grey")
 
