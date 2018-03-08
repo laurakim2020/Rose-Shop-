@@ -1,3 +1,21 @@
+import pygame
+from pygame.locals import *
+
+WinSize = [1024,768]
+def main():
+    pygame.init()
+    screen = pygame.display.set_mode(WinSize)
+    while True:
+        for e in pygame.event.get():
+            if e.type == "QUIT":
+                return
+
+if __name__ == '__main__':
+    main()
+
+pygame.quit
+quit()
+
 print ("Welcome to Le Fleur De Rose")
 
 def numflower(num):
