@@ -1,22 +1,39 @@
 import pygame
 from pygame.locals import *
 
+display_width = 960
+display_height = 768
+
+rose_width = 73
+
+Display = pygame.display.set_mode((display_width, display_height))
+pygame.display.set_caption('Welcome to Le Fleur de Rose')
+
+roseImg = pygame.image.load('Rose_Eden.JPG')
+
 WinSize = [1024,768]
+screen = pygame.display.set_mode(WinSize)
+
+def rose(x, y):
+    screen.blit(roseImg, (x, y))
+
 def main():
     pygame.init()
-    screen = pygame.display.set_mode(WinSize)
+    pygame.display.set_caption('')
+
     while True:
         for e in pygame.event.get():
-            if e.type == "QUIT":
+            if e.type == pygame.QUIT:
                 return
-
+        rose(200, 200)
+        pygame.display.update()
 if __name__ == '__main__':
     main()
 
-pygame.quit
+
+pygame.quit()
 quit()
 
-print ("Welcome to Le Fleur De Rose")
 
 def numflower(num):
     if num == 0:
@@ -68,6 +85,5 @@ else:
     print("Moving on to next step") 
         
 
-    
 question = input("Would you like to order another box of roses?")
 
