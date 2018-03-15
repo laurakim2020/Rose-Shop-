@@ -3,6 +3,7 @@ For this project I will create an online flower shop. The idea is to create a sh
 In order to function this program, I will be using if statements. For example: the type of roses will be assigned to a number. You will then have to choose from a scale of 1-10 the rose you want. If red rose = 10 then the program will return “red rose”.  
 
 First Round:
+
 What I hoped to accomplish in the first round is for users to select their ideal rose box. The program would ask certain questions to list the type of rose, color of box and etc. Moreover, I would like to test different functions that would improve the project. 
 
 Test Plan #1: The user is prompted to enter the number according to the rose they want. The rose-eden flower's number is 0. User enters 0. The program returns "rose-eden". Furthermore, user enters the number of roses wanted, however the maximum number of flowers is 12. If user enters a number greater than 12, program prints "No one needs that many flowers". If user enters below 12, program prints "Nice and Simple". User enters "yes" or "no" to "Would you like to change the color of your rose". The program prints "Great" if yes and "Keeping original color" if "no". 
@@ -10,6 +11,7 @@ Test Plan #1: The user is prompted to enter the number according to the rose the
 Test Plan #2: Users get the option to change the color of their roses. When the user inputs "yes", the program prints "Great" and then a list of the color options will be printed. If "no" then the program confirms that the color will be kept.Then comes to the user picking the box. The program is given the option to have them be in a glass or regular box. For the regular box, the user will have to pick the material and shape of it. The user could compose a greeting card that must be 150 characters maximum. If user does not want to compose one, the program asks if the user would like to order another box or roses. 
 
 Reflections and Revisions: 
+
 The process was good but could be better. I would like to add new functions that I learn along the way and I plan on making changes to the big picture as well. 
 
 Next steps #1: I hope to use different functions and setting up a dictionary. Additionally, asking the user if they would like another order. Ideally, I would like my rose shop to go gobal, therefore, I look forward to expanding the rose shop. 
