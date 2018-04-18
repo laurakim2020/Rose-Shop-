@@ -1,21 +1,26 @@
 import pygame
 from pygame.locals import *
 
-display_width = 960
-display_height = 768
+display_width = 900
+display_height = 750
 
-rose_width = 73
+rose_width = 250
 
 Display = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption('Welcome to Le Fleur de Rose')
 
-roseImg = pygame.image.load('Rose_Eden.JPG')
-
+#roseImg = pygame.image.load("Rose_Eden.JPG")
 WinSize = [1024,768]
 screen = pygame.display.set_mode(WinSize)
 
+mylist = ["Rose_Eden.JPG", "Beach_rose.jpg", "Damask_rose.jpg", "golden_celebration.jpg"]
+for i in mylist:
+    roseImg = pygame.image.load(i)
+    x = 10
+    screen.blit(pygame.transform.scale(roseImg, (rose_width, rose_width)), (x, 200))
+
 def rose(x, y):
-    screen.blit(roseImg, (x, y))
+    screen.blit(pygame.transform.scale(roseImg, (rose_width, rose_width)), (x, y))
 
 def main():
     pygame.init()
@@ -25,27 +30,26 @@ def main():
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 return
-        rose(200, 200)
+        for i in mylist:
+            roseImg = pygame.image.load(i)
+            x = i*10
+            screen.blit(pygame.transform.scale(roseImg, (rose_width, rose_width)), (x, 200))
         pygame.display.update()
 if __name__ == '__main__':
     main()
 
-
 pygame.quit()
 quit()
 
-
 def numflower(num):
-    if num == 0:
+    if num == 1:
         return "Rose Eden"
-    elif num == 1:
-        return "Golden Celebration"
     elif num == 2:
-        return "Damask Rose"
+        return "Golden Celebration"
     elif num == 3:
-        return "Beach Rose"
+        return "Damask Rose"
     elif num == 4:
-        return "Dog-Rose"
+        return "Beach Rose"
     else:
         return "Please enter the rose you would like according to its number"
 print(numflower(int(input("Please enter the rose you would like according to its number"))))
@@ -86,4 +90,3 @@ else:
         
 
 question = input("Would you like to order another box of roses?")
-
