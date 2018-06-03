@@ -92,7 +92,7 @@ else:
 
 
 
-style = input("Press enter an arrangement style")
+style = input("Press enter an arrangement style (Click enter to see the style options)")
 arrangement = input("arrangement: Solid, Checked, Vertical Rows, Horizontal Rows")
 
 
@@ -119,13 +119,29 @@ else:
 
 compose = input("Would you like to compose a greeting card?")
 if compose == "yes":
-    print("Greeting card message must be 150 characters maximum")
+    print("Greeting card message must be 100 characters maximum")
     card = input("Enter your message")
     while len(card) >= 150:
         print("Your message is ", len(card), " characters long. Please revise ")
         card = input("Enter your message")
 else:
-    print("Moving on to next step")
+    print("Checkout")
+
+
+
+information = input("Enter your first and last name")
+information = input("Street Address")
+information = input("Email Address")
+
+
+
+information = input("Select type of payment: Amex, Visa, Mastercard, Chase, Citibank ")
+information = input("Card Number")
+
+
+
+statement = input("Press Enter to Finalize Order")
+statement = input("Thank you for shopping at the RoseShop")
 
 
 
@@ -133,7 +149,7 @@ question = input("Would you like to order another box of roses?")
 if question == "yes":
     print("Excellent")
 else:
-    print("Thank you for shopping at the RoseShop")
+    print("Exit")
 
 pygame.quit()
 quit()
